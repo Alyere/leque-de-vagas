@@ -1,3 +1,12 @@
+main
+export default function Home() {
+  return (
+    <div>
+      <h1>Bem-vindo ao Leque de Vagas</h1>
+    </div>
+  );
+}
+
  feature/not-found-vaga
 import { notFound } from "next/navigation";
 
@@ -62,3 +71,4 @@ export default async function PaginaDaVaga({
 
 // A pasta [id] cria a rota dinâmica. Ou seja, por exemplo: /vagas/1, /vagas/2
 main
+ main
