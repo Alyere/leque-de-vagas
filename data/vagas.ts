@@ -1,20 +1,12 @@
-// FRENTE 1 · o contrato da equipe. Este arquivo sai primeiro, sozinho,
-// num commit só. As outras três frentes ficam paradas até ele existir.
 export type Vaga = {
-  // texto, não número: o que vem da URL é sempre texto
   id: string;
   titulo: string;
   empresa: string;
-  // tem que existir em data/empresa.ts, escrito igualzinho
   empresaSlug: string;
-  // Front-end · Back-end · Dados · Mobile · QA · Design
   area: string;
-  // Estágio · Júnior · Pleno
   senioridade: string;
-  // Remoto · Híbrido · Presencial + cidade
   local: string;
   aceitaIniciante: boolean;
-  // no mínimo 300 caracteres: o "ver mais" precisa ter o que esconder
   descricao: string;
 };
 
@@ -29,12 +21,9 @@ export const vagas: Vaga[] = [
     local: "Remoto",
     aceitaIniciante: true,
     descricao:
-      "Você vai trabalhar com React e Next.js num time de produto que já " +
-      "está no ar, pareando com gente mais experiente nas primeiras semanas " +
-      "e assumindo telas inteiras depois. O dia a dia é ler o código dos " +
-      "outros, abrir pull request pequeno e conversar com quem desenha. Não " +
-      "exigimos experiência anterior em empresa: exigimos vontade de " +
-      "aprender em público e de pedir ajuda antes de travar dois dias.",
+      "Você vai trabalhar com React e Next.js num time de produto que já está no ar, " +
+      "pareando com gente mais experiente nas primeiras semanas e assumindo telas inteiras " +
+      "depois. O dia a dia envolve ler código, abrir pull requests pequenos e conversar com quem desenha.",
   },
   {
     id: "2",
@@ -46,12 +35,9 @@ export const vagas: Vaga[] = [
     local: "Híbrido · Recife",
     aceitaIniciante: true,
     descricao:
-      "O time de dados cuida dos painéis que a diretoria abre toda segunda " +
-      "de manhã. Você vai escrever SQL, limpar planilha que chegou torta e " +
-      "montar visualização que responde uma pergunta de negócio por vez. " +
-      "Metade do trabalho é técnico; a outra metade é descobrir o que a " +
-      "pessoa que pediu o relatório realmente queria saber. Python é " +
-      "bem-vindo e não é obrigatório para se candidatar.",
+      "Você vai trabalhar com SQL, organização de dados e construção de relatórios para diferentes " +
+      "áreas da empresa. Também vai ajudar a transformar perguntas de negócio em análises e visualizações " +
+      "úteis. Conhecimento de Python é bem-vindo, mas não é obrigatório.",
   },
   {
     id: "3",
@@ -63,12 +49,9 @@ export const vagas: Vaga[] = [
     local: "Presencial · Olinda",
     aceitaIniciante: false,
     descricao:
-      "O aplicativo da Nuvem Rosa está nas duas lojas e tem gente usando " +
-      "todo dia, então a vaga é para quem já publicou app e sabe o que " +
-      "acontece quando uma atualização quebra na mão de quem usa. A stack " +
-      "é React Native com Expo, testes em Detox e uma esteira de release " +
-      "que você vai ajudar a arrumar. Pedimos dois anos de experiência com " +
-      "mobile porque hoje não há ninguém sênior no time para revisar.",
+      "O aplicativo da Nuvem Rosa está nas duas lojas e tem pessoas usuárias ativas diariamente. " +
+      "A stack principal é React Native com Expo, testes automatizados e esteira de publicação para " +
+      "garantir estabilidade nas entregas de novas funcionalidades.",
   },
   {
     id: "4",

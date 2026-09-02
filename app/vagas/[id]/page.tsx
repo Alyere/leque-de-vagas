@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { vagas } from "@/data/vagas";
+
 import DescricaoDaVaga from "@/components/DescricaoDaVaga";
 import BotaoCopiarLink from "@/components/BotaoCopiarLink";
 

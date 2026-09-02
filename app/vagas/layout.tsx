@@ -1,16 +1,11 @@
-import  type {ReactNode} from "react"
+import type { Metadata } from "next";
+import "@/app/globals.css";
 
-export default function LayoutVagas({children}: { children:
-ReactNode}){
-return(
-< section>
-{children}
+export const metadata: Metadata = {
+  title: "Layout da página de vagas",
+  description: "Projeto da aula 01 de Introdução ao Next.js",
+};
 
-</section>
-
-);
-
-
-
+export default function VagasLayout({ children }: { children: React.ReactNode }) {
+  return <main>{children}</main>;
 }
-
