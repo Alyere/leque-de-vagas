@@ -21,12 +21,10 @@ export const vagas: Vaga[] = [
     local: "Remoto",
     aceitaIniciante: true,
     descricao:
-      "Você vai trabalhar com React e Next.js num time de produto que já " +
-      "está no ar, pareando com pessoas mais experientes nas primeiras semanas " +
-      "e assumindo telas inteiras depois. O dia a dia envolve ler código, " +
-      "abrir pull requests pequenos e conversar com quem desenha o produto.",
+      "Você vai trabalhar com React e Next.js num time de produto que já está no ar, " +
+      "pareando com gente mais experiente nas primeiras semanas e assumindo telas inteiras " +
+      "depois. O dia a dia envolve ler código, abrir pull requests pequenos e conversar com quem desenha.",
   },
-
   {
     id: "2",
     titulo: "Analista de Dados Júnior",
@@ -37,12 +35,10 @@ export const vagas: Vaga[] = [
     local: "Híbrido · Recife",
     aceitaIniciante: true,
     descricao:
-      "Você vai trabalhar com SQL, organização de dados e construção de " +
-      "relatórios para diferentes áreas da empresa. Também vai ajudar a " +
-      "transformar perguntas de negócio em análises e visualizações úteis. " +
-      "Conhecimento de Python é bem-vindo, mas não é obrigatório.",
+      "Você vai trabalhar com SQL, organização de dados e construção de relatórios para diferentes " +
+      "áreas da empresa. Também vai ajudar a transformar perguntas de negócio em análises e visualizações " +
+      "úteis. Conhecimento de Python é bem-vindo, mas não é obrigatório.",
   },
-
   {
     id: "3",
     titulo: "Pessoa Desenvolvedora Mobile Pleno",
@@ -53,72 +49,134 @@ export const vagas: Vaga[] = [
     local: "Presencial · Olinda",
     aceitaIniciante: false,
     descricao:
-      "Você vai trabalhar na evolução do aplicativo da Nuvem Rosa para " +
-      "Android e iOS. A equipe utiliza React Native com Expo, testes " +
-      "automatizados e uma esteira de publicação. Procuramos alguém que " +
-      "já tenha experiência com desenvolvimento e publicação de aplicativos.",
+      "O aplicativo da Nuvem Rosa está nas duas lojas e tem pessoas usuárias ativas diariamente. " +
+      "A stack principal é React Native com Expo, testes automatizados e esteira de publicação para " +
+      "garantir estabilidade nas entregas de novas funcionalidades.",
   },
-
   {
     id: "4",
-    titulo: "Pessoa Desenvolvedora Back-end Júnior",
+    titulo: "Desenvolvedor(a) Back-end Júnior",
+    empresa: "Ponto Vivo",
+    empresaSlug: "ponto-vivo",
+    area: "Back-end",
+    senioridade: "Júnior",
+    local: "Remoto",
+    aceitaIniciante: true,
+    descricao:
+      "Atuação no desenvolvimento e manutenção de serviços em Node.js e bancos relacionais. " +
+      "Você participará de cerimônias ágeis, aprenderá padrões de arquitetura em microsserviços " +
+      "e ajudará na integração de novos endpoints para a equipe de produto e mobile.",
+  },
+  {
+    id: "5",
+    titulo: "Engenheiro(a) de Software Pleno",
     empresa: "Nuvem Rosa",
     empresaSlug: "nuvem-rosa",
     area: "Back-end",
-    senioridade: "Júnior",
-    local: "Remoto",
-    aceitaIniciante: true,
+    senioridade: "Pleno",
+    local: "Híbrido · Olinda",
+    aceitaIniciante: false,
     descricao:
-      "Você vai ajudar a desenvolver e manter as APIs que alimentam o " +
-      "aplicativo e os sistemas internos da empresa. A stack utiliza " +
-      "Node.js, TypeScript e PostgreSQL. A rotina envolve criação de " +
-      "endpoints, testes e investigação de problemas.",
+      "Foco em estabilidade, monitoramento de logs e criação de APIs de alta concorrência. " +
+      "Procuramos alguém com facilidade para propor soluções de banco de dados e conduzir code " +
+      "reviews garantindo cobertura de testes e boas práticas de entrega contínua.",
   },
-
-  {
-    id: "5",
-    titulo: "Pessoa Analista de UX Júnior",
-    empresa: "Ponto Vivo",
-    empresaSlug: "ponto-vivo",
-    area: "UX/UI",
-    senioridade: "Júnior",
-    local: "Híbrido · João Pessoa",
-    aceitaIniciante: true,
-    descricao:
-      "Você vai participar de pesquisas com usuários, organizar descobertas " +
-      "e ajudar a transformar problemas reais em soluções de interface. " +
-      "Também vai trabalhar junto com designers e desenvolvedores durante " +
-      "a criação e evolução dos produtos.",
-  },
-
   {
     id: "6",
-    titulo: "Engenheira de Software Pleno",
+    titulo: "Estágio em Ciência de Dados",
     empresa: "Aurora Tech",
     empresaSlug: "aurora-tech",
-    area: "Back-end",
-    senioridade: "Pleno",
+    area: "Dados",
+    senioridade: "Estágio",
     local: "Remoto",
-    aceitaIniciante: false,
+    aceitaIniciante: true,
     descricao:
-      "Você vai participar do desenvolvimento de funcionalidades do início " +
-      "ao fim, desde a discussão do problema até a implementação e o " +
-      "acompanhamento após o deploy. A equipe trabalha principalmente com " +
-      "TypeScript, Node.js, PostgreSQL e serviços em nuvem.",
+      "Oportunidade para quem deseja desenvolver consultas analíticas em SQL, automatizar " +
+      "pipelines de extração e apoiar relatórios gerenciais. Terá mentoria direta com a liderança " +
+      "técnica para evoluir na exploração e visualização consistente de métricas.",
   },
   {
-    id: "",
-    titulo: "Engenheiro de Software Pleno",
+    id: "7",
+    titulo: "Analista de QA Júnior",
     empresa: "Ponte Digital",
     empresaSlug: "ponte-digital",
-    area: "Back-end",
+    area: "QA",
+    senioridade: "Júnior",
+    local: "Presencial · Recife",
+    aceitaIniciante: true,
+    descricao:
+      "Apoio no planejamento de planos de testes manuais e introdução à automação de testes de " +
+      "interface em aplicações web e mobile. Comunicação clara para mapear cenários de borda e " +
+      "validar entregas antes de cada subida oficial para produção.",
+  },
+  {
+    id: "8",
+    titulo: "Product Designer Pleno",
+    empresa: "Ponto Vivo",
+    empresaSlug: "ponto-vivo",
+    area: "Design",
     senioridade: "Pleno",
     local: "Remoto",
     aceitaIniciante: false,
     descricao:
-      "Você vai participar do desenvolvimento de funcionalidades do início " +
-      "ao fim, desde a discussão do problema até a implementação e o " +
-      "acompanhamento após o deploy. A equipe trabalha principalmente com " +
-      "TypeScript, Node.js, PostgreSQL e serviços em nuvem.",
+      "Construção de fluxos de navegação, wireframes, protótipos navegáveis no Figma e evolução " +
+      "do Design System em conjunto com o time de front-end. Condução de pesquisas com usuários " +
+      "e refinamento de componentes com foco em acessibilidade e ergonomia.",
+  },
+  {
+    id: "9",
+    titulo: "Pessoa Desenvolvedora Front-end Pleno",
+    empresa: "Código Norte",
+    empresaSlug: "codigo-norte",
+    area: "Front-end",
+    senioridade: "Pleno",
+    local: "Híbrido · Recife",
+    aceitaIniciante: false,
+    descricao:
+      "Construção de aplicações ricas com TypeScript, Next.js e consumo de APIs REST/GraphQL. " +
+      "Responsável por manter a consistência visual, otimização de performance no carregamento " +
+      "de componentes e boas práticas de tipagem em todo o ecossistema da empresa.",
+  },
+  {
+    id: "10",
+    titulo: "Estágio em Desenvolvimento Front-end",
+    empresa: "Ponte Digital",
+    empresaSlug: "ponte-digital",
+    area: "Front-end",
+    senioridade: "Estágio",
+    local: "Remoto",
+    aceitaIniciante: true,
+    descricao:
+      "Vaga de entrada com foco em aprendizado contínuo com HTML, CSS modular e primeiros " +
+      "passos em ecossistema React. Acompanhamento diário com desenvolvedores seniores para " +
+      "evoluir na escrita de código limpo e resolução colaborativa de chamados.",
+  },
+  {
+    id: "11",
+    titulo: "Pessoa Desenvolvedora Mobile Júnior",
+    empresa: "Código Norte",
+    empresaSlug: "codigo-norte",
+    area: "Mobile",
+    senioridade: "Júnior",
+    local: "Presencial · Recife",
+    aceitaIniciante: true,
+    descricao:
+      "Apoio no desenvolvimento de telas em React Native, correção de bugs de interface e " +
+      "consumo de serviços de autenticação. Ambiente ideal para quem já fez projetos práticos " +
+      "e quer vivenciar o ciclo de desenvolvimento e publicação em ambiente corporativo.",
+  },
+  {
+    id: "12",
+    titulo: "Analista de QA Pleno",
+    empresa: "Aurora Tech",
+    empresaSlug: "aurora-tech",
+    area: "QA",
+    senioridade: "Pleno",
+    local: "Remoto",
+    aceitaIniciante: false,
+    descricao:
+      "Criação e execução de testes automatizados de integração, carga e regressão. " +
+      "Atuação próxima aos desenvolvedores na pipeline de CI/CD para assegurar que novas " +
+      "funcionalidades não introduzam quebras no fluxo crítico dos usuários finais.",
   },
 ];
