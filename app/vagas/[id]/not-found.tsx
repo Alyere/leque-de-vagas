@@ -10,6 +10,6 @@ export default function NotFound() {
         Voltar para as vagas
       </Link>
     </main>
-main
+
   );
 }

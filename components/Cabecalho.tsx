@@ -9,6 +9,7 @@ const links = [
   { href: "/empresas", label: "Empresas" },
   { href: "/sobre", label: "Sobre" },
   { href: "/termos", label: "Termos" },
+  { href: "/privacidade", label: "Privacidade" },
 ];
 
 export default function Cabecalho() {
