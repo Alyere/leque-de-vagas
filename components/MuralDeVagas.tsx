@@ -1,14 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import { Vaga } from "@/data/vagas";
 import Filtros from "./Filtros";
-
-type Vaga = {
-  titulo: string;
-  empresa: string;
-  area: string;
-  aceitaIniciante: boolean;
-};
 
 type MuralDeVagasProps = {
   vagas: Vaga[];
@@ -50,17 +44,13 @@ export default function MuralDeVagas({ vagas }: MuralDeVagasProps) {
         {visiveis.length} de {vagas.length} vagas
       </p>
 
-      <p>
-        {aceitamIniciante} vagas aceitam iniciantes
-      </p>
+      <p>{aceitamIniciante} vagas aceitam iniciantes</p>
 
-      {visiveis.length === 0 && (
-        <p>Nenhuma vaga encontrada.</p>
-      )}
+      {visiveis.length === 0 && <p>Nenhuma vaga encontrada.</p>}
 
       <div>
         {visiveis.map((vaga) => (
-          <div key={vaga.titulo}>
+          <div key={vaga.id}>
             <h2>{vaga.titulo}</h2>
             <p>{vaga.empresa}</p>
             <p>{vaga.area}</p>
