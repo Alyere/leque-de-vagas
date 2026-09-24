@@ -14,7 +14,7 @@ export default function Filtros({
   areas,
 }: FiltrosProps) {
   return (
-    <div>
+    <div className="filtros-container">
       <input
         type="text"
         placeholder="Buscar vaga ou empresa"
@@ -22,13 +22,13 @@ export default function Filtros({
         onChange={(evento) => aoMudarBusca(evento.target.value)}
       />
 
-      <div>
+      <div className="abas-botoes">
         {areas.map((item) => (
           <button
             key={item}
             type="button"
             onClick={() => aoMudarArea(item)}
-            className={area === item ? "active" : ""}
+            className={area === item ? "ativa" : ""}
           >
             {item}
           </button>

@@ -1,5 +1,4 @@
-{
-  "vagas": [
+[
     {
       "id": "1",
       "titulo": "Pessoa Desenvolvedora Front-end Júnior",
@@ -131,6 +130,225 @@
       "local": "Remoto",
       "aceitaIniciante": false,
       "descricao": "Criação e execução de testes automatizados de integração, carga e regressão. Atuação próxima aos desenvolvedores na pipeline de CI/CD para assegurar que novas funcionalidades não introduzam quebras no fluxo crítico dos usuários finais."
-    }
+    },
+    {
+    "id": "13",
+    "titulo": "Pessoa Desenvolvedora Front-end Júnior",
+    "empresa": "Horizonte Digital",
+    "empresaSlug": "horizonte-digital",
+    "area": "Front-end",
+    "senioridade": "Júnior",
+    "local": "Remoto",
+    "aceitaIniciante": true,
+    "descricao": "Atuação na criação e manutenção de interfaces web utilizando React, JavaScript e CSS. A pessoa desenvolvedora terá acompanhamento de profissionais mais experientes e participará de revisões de código e pequenas entregas de produto."
+    },
+    {
+    "id": "14",
+    "titulo": "Desenvolvedor(a) Back-end Júnior",
+    "empresa": "Horizonte Digital",
+    "empresaSlug": "horizonte-digital",
+    "area": "Back-end",
+    "senioridade": "Júnior",
+    "local": "Híbrido · João Pessoa",
+    "aceitaIniciante": true,
+    "descricao": "Desenvolvimento de APIs REST utilizando Node.js, integração com bancos de dados relacionais e manutenção de serviços existentes. A vaga oferece espaço para aprendizado de arquitetura, testes automatizados e boas práticas de desenvolvimento."
+    },
+    {
+    "id": "15",
+    "titulo": "Estágio em Desenvolvimento de Software",
+    "empresa": "Maré Sistemas",
+    "empresaSlug": "mare-sistemas",
+    "area": "Desenvolvimento",
+    "senioridade": "Estágio",
+    "local": "Híbrido · João Pessoa",
+    "aceitaIniciante": true,
+    "descricao": "Oportunidade para estudantes que desejam iniciar a carreira em desenvolvimento de software. A rotina envolve correções simples, criação de pequenas funcionalidades e aprendizado de Git, APIs e fundamentos de programação."
+    },
+    {
+    "id": "16",
+    "titulo": "Analista de Dados Júnior",
+    "empresa": "Maré Sistemas",
+    "empresaSlug": "mare-sistemas",
+    "area": "Dados",
+    "senioridade": "Júnior",
+    "local": "Remoto",
+    "aceitaIniciante": true,
+    "descricao": "Responsável por consultar, organizar e analisar dados utilizando SQL e ferramentas de visualização. A pessoa também apoiará a criação de indicadores e relatórios para diferentes áreas do negócio."
+    },
+    {
+    "id": "17",
+    "titulo": "Pessoa Desenvolvedora Full Stack Júnior",
+    "empresa": "Vértice Labs",
+    "empresaSlug": "vertice-labs",
+    "area": "Full Stack",
+    "senioridade": "Júnior",
+    "local": "Remoto",
+    "aceitaIniciante": true,
+    "descricao": "Participação no desenvolvimento de aplicações web utilizando React no front-end e Node.js no back-end. A equipe trabalha com entregas incrementais, revisão de código e acompanhamento próximo durante os primeiros meses."
+    },
+    {
+    "id": "18",
+    "titulo": "Pessoa Desenvolvedora Full Stack Pleno",
+    "empresa": "Vértice Labs",
+    "empresaSlug": "vertice-labs",
+    "area": "Full Stack",
+    "senioridade": "Pleno",
+    "local": "Híbrido · Recife",
+    "aceitaIniciante": false,
+    "descricao": "Desenvolvimento de funcionalidades completas, desde a interface até APIs e persistência de dados. Esperamos experiência com TypeScript, React, Node.js, bancos relacionais e práticas de testes automatizados."
+    },
+    {
+    "id": "19",
+    "titulo": "Estágio em QA",
+    "empresa": "Ponte Digital",
+    "empresaSlug": "ponte-digital",
+    "area": "QA",
+    "senioridade": "Estágio",
+    "local": "Remoto",
+    "aceitaIniciante": true,
+    "descricao": "Apoio na elaboração de casos de teste, execução de testes manuais e registro de problemas encontrados durante o desenvolvimento. A pessoa estagiária aprenderá conceitos de qualidade, testes de API e automação de testes."
+    },
+    {
+    "id": "20",
+    "titulo": "Engenheiro(a) de Dados Júnior",
+    "empresa": "Aurora Tech",
+    "empresaSlug": "aurora-tech",
+    "area": "Dados",
+    "senioridade": "Júnior",
+    "local": "Remoto",
+    "aceitaIniciante": true,
+    "descricao": "Atuação na construção e manutenção de pipelines de dados, consultas SQL e processos de transformação. A equipe oferece mentoria para evolução em Python, modelagem de dados e ferramentas de processamento."
+    },
+    {
+    "id": "21",
+    "titulo": "Pessoa Desenvolvedora Mobile Júnior",
+    "empresa": "Maré Sistemas",
+    "empresaSlug": "mare-sistemas",
+    "area": "Mobile",
+    "senioridade": "Júnior",
+    "local": "Híbrido · João Pessoa",
+    "aceitaIniciante": true,
+    "descricao": "Desenvolvimento e manutenção de telas mobile utilizando React Native. A rotina inclui integração com APIs, correção de problemas de interface e participação no processo de testes e publicação do aplicativo."
+    },
+    {
+    "id": "22",
+    "titulo": "Pessoa Desenvolvedora Mobile Pleno",
+    "empresa": "Horizonte Digital",
+    "empresaSlug": "horizonte-digital",
+    "area": "Mobile",
+    "senioridade": "Pleno",
+    "local": "Remoto",
+    "aceitaIniciante": false,
+    "descricao": "Responsável pela evolução de aplicações mobile utilizando React Native e Expo. Participará de decisões técnicas, revisão de código, implementação de testes e melhorias de performance e estabilidade."
+    },
+    {
+    "id": "23",
+    "titulo": "UI/UX Designer Júnior",
+    "empresa": "Vértice Labs",
+    "empresaSlug": "vertice-labs",
+    "area": "Design",
+    "senioridade": "Júnior",
+    "local": "Remoto",
+    "aceitaIniciante": true,
+    "descricao": "Criação de wireframes, protótipos e interfaces digitais utilizando Figma. A pessoa designer trabalhará próxima aos times de produto e desenvolvimento, contribuindo para melhorias de usabilidade e consistência visual."
+    },
+    {
+    "id": "24",
+    "titulo": "Product Designer Pleno",
+    "empresa": "Maré Sistemas",
+    "empresaSlug": "mare-sistemas",
+    "area": "Design",
+    "senioridade": "Pleno",
+    "local": "Híbrido · João Pessoa",
+    "aceitaIniciante": false,
+    "descricao": "Atuação na descoberta e evolução de produtos digitais, desde pesquisas com usuários até prototipação e acompanhamento da implementação. Também contribuirá para a evolução do Design System e dos padrões de acessibilidade."
+    },
+    {
+    "id": "25",
+    "titulo": "Analista de Segurança da Informação Júnior",
+    "empresa": "Nuvem Clara",
+    "empresaSlug": "nuvem-clara",
+    "area": "Segurança",
+    "senioridade": "Júnior",
+    "local": "Remoto",
+    "aceitaIniciante": true,
+    "descricao": "Apoio no monitoramento de eventos de segurança, análise de alertas e aplicação de controles básicos de proteção. A vaga permite desenvolver conhecimentos em redes, sistemas operacionais, autenticação e boas práticas de segurança."
+    },
+    {
+    "id": "26",
+    "titulo": "DevOps Júnior",
+    "empresa": "Nuvem Clara",
+    "empresaSlug": "nuvem-clara",
+    "area": "DevOps",
+    "senioridade": "Júnior",
+    "local": "Híbrido · Recife",
+    "aceitaIniciante": true,
+    "descricao": "Apoio na manutenção de pipelines de CI/CD, automação de tarefas e monitoramento de ambientes. A pessoa trabalhará com profissionais experientes para aprender sobre Docker, cloud, observabilidade e processos de entrega."
+    },
+    {
+    "id": "27",
+    "titulo": "Engenheiro(a) de Software Sênior",
+    "empresa": "Código Norte",
+    "empresaSlug": "codigo-norte",
+    "area": "Back-end",
+    "senioridade": "Sênior",
+    "local": "Remoto",
+    "aceitaIniciante": false,
+    "descricao": "Atuação em decisões de arquitetura, desenvolvimento de serviços distribuídos e evolução de sistemas críticos. Esperamos experiência com APIs, bancos de dados, observabilidade, testes e orientação técnica de outros desenvolvedores."
+    },
+    {
+    "id": "28",
+    "titulo": "Pessoa Desenvolvedora Front-end Sênior",
+    "empresa": "Aurora Tech",
+    "empresaSlug": "aurora-tech",
+    "area": "Front-end",
+    "senioridade": "Sênior",
+    "local": "Híbrido · Recife",
+    "aceitaIniciante": false,
+    "descricao": "Responsável por liderar tecnicamente iniciativas de front-end utilizando React, Next.js e TypeScript. Participará de decisões de arquitetura, revisão de código, otimização de performance e evolução dos padrões de desenvolvimento."
+    },
+    {
+    "id": "29",
+    "titulo": "Analista de Suporte Técnico Júnior",
+    "empresa": "Ponto Vivo",
+    "empresaSlug": "ponto-vivo",
+    "area": "Suporte",
+    "senioridade": "Júnior",
+    "local": "Presencial · Recife",
+    "aceitaIniciante": true,
+    "descricao": "Atendimento de chamados técnicos, investigação de problemas básicos e orientação de usuários sobre sistemas internos. A equipe oferece treinamento inicial e acompanhamento para desenvolvimento de conhecimentos em infraestrutura e aplicações."
+    },
+    {
+    "id": "30",
+    "titulo": "Estágio em Suporte e Infraestrutura",
+    "empresa": "Nuvem Clara",
+    "empresaSlug": "nuvem-clara",
+    "area": "Infraestrutura",
+    "senioridade": "Estágio",
+    "local": "Presencial · João Pessoa",
+    "aceitaIniciante": true,
+    "descricao": "Apoio à equipe de infraestrutura na configuração de equipamentos, organização de acessos e atendimento de solicitações internas. Ideal para estudantes que desejam desenvolver fundamentos de redes, sistemas operacionais e computação em nuvem."
+    },
+    {
+    "id": "31",
+    "titulo": "Analista de Produto Júnior",
+    "empresa": "Vértice Labs",
+    "empresaSlug": "vertice-labs",
+    "area": "Produto",
+    "senioridade": "Júnior",
+    "local": "Remoto",
+    "aceitaIniciante": true,
+    "descricao": "Apoio na organização do backlog, acompanhamento de métricas e entendimento das necessidades dos usuários. A pessoa trabalhará em conjunto com designers, desenvolvedores e liderança de produto para acompanhar a evolução das funcionalidades."
+    },
+    {
+    "id": "32",
+    "titulo": "Analista de Business Intelligence Pleno",
+    "empresa": "Aurora Tech",
+    "empresaSlug": "aurora-tech",
+    "area": "BI",
+    "senioridade": "Pleno",
+    "local": "Híbrido · Recife",
+    "aceitaIniciante": false,
+    "descricao": "Construção e manutenção de dashboards, definição de indicadores e análise de dados para apoiar decisões estratégicas. É necessário conhecimento de SQL e experiência com ferramentas de visualização e modelagem de dados."
+  }
   ]
-}

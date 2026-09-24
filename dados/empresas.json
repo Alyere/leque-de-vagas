@@ -1,5 +1,4 @@
-{
-"empresas": [
+[
     {
       "slug": "aurora-tech",
       "nome": "Aurora Tech",
@@ -31,4 +30,3 @@
       "site": "https://codigonorte.com.br"
     }
 ]
-}

@@ -2,19 +2,37 @@ import Link from "next/link";
 
 export default function NotFound() {
   return (
-    <main className="min-h-[60vh] flex flex-col items-center justify-center text-center px-4 py-12">
-      <h1 className="text-4xl font-extrabold text-neutral-900 mb-2">404</h1>
-      <h2 className="text-xl font-semibold text-neutral-700 mb-4">
-        Página não encontrada
+    <main style={{
+      minHeight: "60vh",
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "center",
+      justifyContent: "center",
+      textAlign: "center",
+      padding: "48px 20px",
+      gap: "16px",
+    }}>
+      <h1 style={{ fontSize: "4rem", margin: 0, color: "var(--foreground)" }}>404</h1>
+      <h2 style={{ fontSize: "1.5rem", margin: 0, color: "var(--pink-light)" }}>
+        Vaga não encontrada
       </h2>
-      <p className="text-neutral-500 max-w-md mb-6">
-        A página ou vaga que você está procurando não existe ou foi removida.
+      <p style={{ maxWidth: "520px", margin: 0, color: "var(--text-muted)", lineHeight: 1.6 }}>
+        Esta oportunidade não existe mais, foi removida ou o endereço digitado está errado.
       </p>
       <Link
-        href="/"
-        className="px-4 py-2 bg-neutral-900 text-white rounded-md hover:bg-neutral-800 transition-colors text-sm font-medium"
+        href="/vagas"
+        style={{
+          marginTop: "8px",
+          background: "#140b17",
+          border: "1px solid rgba(255, 46, 138, 0.4)",
+          color: "var(--pink-light)",
+          borderRadius: "999px",
+          padding: "12px 22px",
+          textDecoration: "none",
+          fontWeight: 600,
+        }}
       >
-        Voltar para a página inicial
+        Ver todas as vagas
       </Link>
     </main>
   );

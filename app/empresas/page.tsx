@@ -1,7 +1,14 @@
+import type { Metadata } from "next";
 import Link from "next/link";
-import { empresas } from "@/data/empresa";
+import { listarEmpresas } from "@/lib/api";
 
-export default function ListagemEmpresas() {
+export const metadata: Metadata = {
+  title: "Empresas · Leque de Vagas",
+  description: "Conheça as empresas que publicam oportunidades no Leque de Vagas.",
+};
+
+export default async function ListagemEmpresas() {
+  const empresas = await listarEmpresas();
   return (
     <main>
       <h1>Empresas</h1>

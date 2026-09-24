@@ -18,7 +18,17 @@ export default function BotaoCopiarLink() {
   return (
     <button
       onClick={handleCopiar}
-      className="px-4 py-2 text-sm font-medium border border-neutral-300 rounded-md hover:bg-neutral-50 transition-colors"
+      style={{
+        padding: "10px 20px",
+        borderRadius: "999px",
+        background: copiado ? "rgba(255, 20, 147, 0.2)" : "linear-gradient(135deg, var(--pink-dark), var(--pink))",
+        color: "white",
+        fontWeight: 600,
+        border: copiado ? "1px solid var(--pink)" : "none",
+        cursor: "pointer",
+        boxShadow: copiado ? "none" : "0 0 12px rgba(255, 20, 147, 0.2)",
+        transition: "all 0.2s ease"
+      }}
     >
       {copiado ? "✓ Link copiado!" : "Copiar link da vaga"}
     </button>
