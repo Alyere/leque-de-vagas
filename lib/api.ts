@@ -23,7 +23,9 @@ export async function listarVagas(): Promise<Vaga[]> {
 
   const dados = await resposta.json();
 
-  return dados;
+  // Tratamento temporário para resiliência de cache (CDN do GitHub / Next.js)
+  // Caso o cache retorne o formato antigo com chave "vagas", ele extrai o array.
+  return Array.isArray(dados) ? dados : dados.vagas;
 }
 
 export async function buscarVaga(
@@ -48,7 +50,17 @@ export async function listarEmpresas(): Promise<Empresa[]> {
 
   const dados = await resposta.json();
 
-  return dados;
+  // Tratamento temporário para resiliência de cache (CDN do GitHub / Next.js)
+  // Caso o cache retorne o formato antigo com chave "empresas", ele extrai o array.
+  const arrayEmpresas = Array.isArray(dados) ? dados : dados.empresas;
+
+  if (!Array.isArray(arrayEmpresas)) {
+    throw new Error(
+      "Formato inválido de empresas.json: esperado um array de empresas."
+    );
+  }
+
+  return arrayEmpresas;
 }
 
 export async function buscarEmpresa(
