@@ -15,12 +15,20 @@ export default function DescricaoDaVaga({ texto }: DescricaoDaVagaProps) {
     !expandido && textoLongo ? `${texto.slice(0, limite)}...` : texto;
 
   return (
-    <div className="text-neutral-700 leading-relaxed">
+    <div style={{ color: "var(--text-muted)", lineHeight: 1.7 }}>
       <p>{textoExibido}</p>
       {textoLongo && (
         <button
           onClick={() => setExpandido(!expandido)}
-          className="mt-2 text-sm font-medium text-blue-600 hover:text-blue-800 underline block"
+          style={{ 
+            marginTop: "12px", 
+            background: "none", 
+            border: "none", 
+            color: "var(--pink-light)", 
+            cursor: "pointer", 
+            fontWeight: 600,
+            textDecoration: "underline"
+          }}
         >
           {expandido ? "Ver menos" : "Ver mais"}
         </button>

@@ -7,25 +7,32 @@ Projeto desenvolvido para a disciplina **Tecnologias para Frontend Avançado - 2
 ---
 
 ## 👥 Equipe
-* Alyere
-* Linda
-* Gabi
-* Gabriel
+
+- Alyere
+- Linda
+- Gabi
+- Gabriel
 
 ---
 
 ## 🛠️ Tecnologias & Ferramentas
-* [Next.js](https://nextjs.org/) (App Router)
-* [React](https://react.dev/)
-* [Tailwind CSS](https://tailwindcss.com/)
-* [TypeScript](https://www.typescriptlang.org/)
-* [Vercel](https://vercel.com/) (Deploy Contínuo)
+
+- [Next.js](https://nextjs.org/) (App Router)
+- [React](https://react.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Vercel](https://vercel.com/) (Deploy Contínuo)
 
 ---
+
+## ⏱️ Atualização do catálogo
+
+Uma vaga nova leva, no pior caso, até 60 segundos para aparecer no site publicado, porque a listagem é revalidada de forma automática nesse intervalo.
 
 ## 💻 Como Rodar o Projeto Localmente
 
 ### 1️⃣ Clonagem e Configuração Inicial (Apenas no primeiro uso)
+
 Abra o terminal na pasta onde costuma salvar seus projetos e execute:
 
 ```bash
@@ -37,3 +44,4 @@ cd leque-de-vagas
 
 # 3. Instale todas as dependências e pacotes necessários
 npm install
+```
