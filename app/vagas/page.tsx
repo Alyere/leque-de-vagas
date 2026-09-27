@@ -1,4 +1,5 @@
 import { Suspense } from "react";
+import Link from "next/link";
 import NumerosDoCatalogo from "@/components/NumerosDoCatalogo";
 import ListagemDeVagas from "@/components/ListagemDeVagas";
 
@@ -13,6 +14,13 @@ const skeletonStyle = {
 export default function PaginaDeVagas() {
   return (
     <main style={{ display: "grid", gap: "24px" }}>
+      <Link href="/vagas/nova" className="vagas-criar-link">
+        <span className="vagas-criar-titulo">Criar vaga</span>
+        <span className="vagas-criar-descricao">
+          + Adicionar nova vaga ao catálogo
+        </span>
+      </Link>
+
       <Suspense fallback={<div style={skeletonStyle} />}>
         <NumerosDoCatalogo />
       </Suspense>
