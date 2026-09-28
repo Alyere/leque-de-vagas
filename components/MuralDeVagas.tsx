@@ -3,6 +3,8 @@
 import { useMemo, useState } from "react";
 import Link from "next/link";
 import { Vaga } from "@/lib/tipos";
+import BotaoDeEnviar from "@/components/BotaoDeEnviar";
+import { arquivar } from "@/app/vagas/acoes";
 
 type MuralDeVagasProps = {
   vagas: Vaga[];
@@ -194,6 +196,20 @@ const estilos = `
   background: var(--pink-light);
   color: #000;
 }
+.mural-arquivar-form { position: relative; z-index: 1; align-self: flex-start; }
+.mural-arquivar {
+  min-height: 36px;
+  padding: 7px 12px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: transparent;
+  color: var(--text-muted);
+  font: inherit;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+.mural-arquivar:hover { border-color: var(--border-hover); color: var(--pink-light); }
+.mural-arquivar:disabled { cursor: wait; opacity: 0.7; }
 
 .mural-tags { display: flex; flex-wrap: wrap; gap: 8px; }
 .mural-tag {
@@ -387,6 +403,13 @@ export default function MuralDeVagas({ vagas, ultimaAtualizacao }: MuralDeVagasP
                   <span className="mural-tag mural-tag-iniciante">Aceita iniciante</span>
                 )}
               </div>
+
+              <form action={arquivar} className="mural-arquivar-form">
+                <input type="hidden" name="id" value={vaga.id} />
+                <BotaoDeEnviar className="mural-arquivar" pendingText="Arquivando…">
+                  Arquivar
+                </BotaoDeEnviar>
+              </form>
             </article>
           ))}
         </div>

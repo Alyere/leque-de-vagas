@@ -6,6 +6,12 @@ const API_URL =
 const GITHUB_API =
   "https://api.github.com/repos/Gabriel-Amorim-dev/leque-de-vagas";
 
+// A memória do PROCESSO. Some quando o servidor reinicia; a aula 06 troca
+// esta linha por um banco de verdade.
+const criadas: Vaga[] = [];
+const arquivadas = new Set<string>();
+const empresasEditadas = new Map<string, Empresa>();
+
 // 60 segundos porque vagas entram e saem o tempo todo
 const CACHE = {
   next: {
@@ -14,7 +20,7 @@ const CACHE = {
   },
 };
 
-export async function listarVagas(): Promise<Vaga[]> {
+export async function buscarVagasPublicadas(): Promise<Vaga[]> {
   const resposta = await fetch(`${API_URL}/vagas.json`, CACHE);
 
   if (!resposta.ok) {
@@ -26,6 +32,21 @@ export async function listarVagas(): Promise<Vaga[]> {
   // Tratamento temporário para resiliência de cache (CDN do GitHub / Next.js)
   // Caso o cache retorne o formato antigo com chave "vagas", ele extrai o array.
   return Array.isArray(dados) ? dados : dados.vagas;
+}
+
+export async function listarVagas(): Promise<Vaga[]> {
+  // O nome continua igual para não quebrar as páginas que já o utilizam.
+  const buscadas = await buscarVagasPublicadas();
+
+  return [...criadas, ...buscadas].filter((vaga) => !arquivadas.has(vaga.id));
+}
+
+export function arquivarVaga(id: string): void {
+  arquivadas.add(id);
+}
+
+export function guardarVaga(vaga: Vaga) {
+  criadas.unshift(vaga); // A mais nova aparece primeiro.
 }
 
 export async function buscarVaga(
@@ -60,7 +81,13 @@ export async function listarEmpresas(): Promise<Empresa[]> {
     );
   }
 
-  return arrayEmpresas;
+  return arrayEmpresas.map(
+    (empresa: Empresa) => empresasEditadas.get(empresa.slug) ?? empresa,
+  );
+}
+
+export function guardarEmpresa(empresa: Empresa): void {
+  empresasEditadas.set(empresa.slug, empresa);
 }
 
 export async function buscarEmpresa(

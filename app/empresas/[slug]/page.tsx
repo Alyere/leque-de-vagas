@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import { buscarEmpresa, listarVagas, listarEmpresas } from "@/lib/api";
 import AbasDaEmpresa from "@/components/AbasDaEmpresa";
@@ -56,6 +57,10 @@ export default async function PaginaDaEmpresa({
   return (
     <main>
       <h1>{empresa.nome}</h1>
+
+      <Link href={`/empresas/${empresa.slug}/editar`} className="empresa-editar-link">
+        Editar perfil
+      </Link>
 
       <AbasDaEmpresa
         sobre={empresa.sobre}

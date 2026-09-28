@@ -32,7 +32,6 @@ type PageProps = {
 export default async function DetalhesVagaPage({ params }: PageProps) {
   const { id } = await params;
   const vaga = await buscarVaga(id);
-  const FormularioDeCandidaturaCompat = FormularioDeCandidatura as any;
 
   if (!vaga) {
     notFound();

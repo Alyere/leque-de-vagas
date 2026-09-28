@@ -173,6 +173,174 @@ main > h1 {
   text-shadow: 0 0 20px rgba(255, 46, 138, 0.3);
 }
 
+.vagas-criar-link {
+  justify-self: end;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  max-width: 100%;
+  min-height: 56px;
+  padding: 10px 14px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: transparent;
+  color: var(--foreground);
+  text-align: left;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.vagas-criar-titulo {
+  font-weight: 700;
+}
+
+.vagas-criar-descricao {
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  line-height: 1.35;
+}
+
+.vagas-criar-link:hover {
+  border-color: var(--border-hover);
+  background: rgba(255, 255, 255, 0.03);
+  box-shadow: var(--shadow-pink);
+}
+
+.vagas-criar-link:focus-visible {
+  outline: 2px solid var(--foreground);
+  outline-offset: 3px;
+}
+
+.vaga-page-title {
+  width: min(560px, 100%);
+  margin: 0 auto 24px;
+  font-size: clamp(2rem, 4vw, 3rem);
+  color: var(--foreground);
+  text-align: left;
+  text-shadow: 0 0 20px rgba(255, 46, 138, 0.25);
+}
+
+.empresa-editar-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 42px;
+  margin: 0 0 24px;
+  padding: 9px 14px;
+  border: 1px solid var(--border-hover);
+  border-radius: 8px;
+  color: var(--pink-light);
+  font-weight: 600;
+}
+
+.empresa-editar-link:hover {
+  background: rgba(255, 46, 138, 0.08);
+  box-shadow: var(--shadow-pink);
+}
+
+.vaga-form {
+  width: min(560px, 100%);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 28px;
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  background: rgba(12, 9, 18, 0.82);
+  box-shadow: 0 24px 60px rgba(8, 6, 12, 0.5);
+  backdrop-filter: blur(10px);
+}
+
+.vaga-field {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.vaga-field label {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--foreground);
+}
+
+.vaga-field input:not([type="checkbox"]),
+.vaga-field select,
+.vaga-field textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.02);
+  color: var(--foreground);
+  font-size: 1rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.vaga-field input:not([type="checkbox"])::placeholder,
+.vaga-field textarea::placeholder {
+  color: var(--text-muted);
+}
+
+.vaga-field select {
+  color-scheme: dark;
+  cursor: pointer;
+}
+
+.vaga-field textarea {
+  min-height: 150px;
+  resize: vertical;
+  font: inherit;
+  line-height: 1.5;
+}
+
+.vaga-field input:not([type="checkbox"]):focus,
+.vaga-field select:focus,
+.vaga-field textarea:focus {
+  outline: none;
+  border-color: rgba(255, 46, 138, 0.8);
+  box-shadow: 0 0 0 4px rgba(255, 46, 138, 0.12);
+  transform: translateY(-1px);
+}
+
+.checkbox-field label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.checkbox-field input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--pink-light);
+}
+
+.vaga-erro {
+  margin-top: 6px;
+  color: #ff8db5;
+  font-size: 0.82rem;
+  line-height: 1.4;
+}
+
+.vaga-submit {
+  margin-top: 8px;
+  border: none;
+  border-radius: 14px;
+  padding: 14px 18px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: white;
+  background: linear-gradient(135deg, var(--pink), var(--violet));
+  box-shadow: 0 12px 24px rgba(255, 46, 138, 0.28);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.vaga-submit:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 16px 28px rgba(255, 46, 138, 0.35);
+}
+
 /* =========================
    LISTA DE VAGAS
 ========================= */
