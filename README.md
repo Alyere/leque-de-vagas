@@ -8,10 +8,10 @@ Projeto desenvolvido para a disciplina **Tecnologias para Frontend Avançado - 2
 
 ## 👥 Equipe
 
-- Alyere
-- Linda
-- Gabi
-- Gabriel
+- Alyere Targino
+- Linda Maria Santos Melo
+- Maria Gabriele Araújo Gonçalves
+- Gabriel Gonçalves Menezes Amorim
 
 ---
 
